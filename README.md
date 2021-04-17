@@ -1,2 +1,2 @@
-# Jeff-Karr-Portfolio
-Jeff is a full stack web developer located in Belton, Missouri. This site is intended to showcase my recent open source projects and to introduce myself.
+# Welcome to the Jeff Karr Portfolio. 
+A personal website used to develop a portfolio of recent projects and to introduce myself to those I work with.

@@ -1,0 +1,19 @@
+{
+  "name": "test-portfolio",
+  "version": "1.0.0",
+  "description": "a developer portfolio",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffkarr/test-portfolio.git"
+  },
+  "author": "jeff karr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffkarr/test-portfolio/issues"
+  },
+  "homepage": "https://github.com/jeffkarr/test-portfolio#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
