@@ -2,7 +2,10 @@
     box-sizing: border-box;
 }
 
-body, html, #viewport, #scroll-container {
+body,
+html,
+#viewport,
+#scroll-container {
     height: 100%;
 }
 
@@ -24,7 +27,7 @@ body, html, #viewport, #scroll-container {
 }
 
 #home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("images/jk_portfolio_pic9.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0005), rgba(255, 255, 255, 0.0010), rgba(0, 0, 0, 1.0)), url("images/tech_background_ball_jk_pic_2560x1512.png");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,13 +51,13 @@ body, html, #viewport, #scroll-container {
 }
 
 #mouse-body {
-  position: absolute;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #fff;
-  border-radius: 38px;
-  height: 60px;
-  width: 40px;
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 38px;
+    height: 60px;
+    width: 40px;
 }
 
 .scroll-down-arrows {
@@ -63,7 +66,7 @@ body, html, #viewport, #scroll-container {
     left: 60%;
     padding-top: 1rem;
     padding-bottom: 2.75rem;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .scroll-down-arrows span:nth-child(2) {
@@ -86,16 +89,18 @@ body, html, #viewport, #scroll-container {
 }
 
 @keyframes animate {
-    0%   {
+    0% {
         opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
+        transform: rotate(45deg) translate(-20px, -20px);
     }
-    50%   {
+
+    50% {
         opacity: 1;
     }
-    100%   {
+
+    100% {
         opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
+        transform: rotate(45deg) translate(20px, 20px);
     }
 }
 
@@ -130,7 +135,7 @@ section .home-reveal:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: silver;
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #AA771C);
     transform-origin: right;
     transition: 1.75s;
     transition-delay: 0s;
@@ -152,9 +157,9 @@ section .home-reveal.active:before {
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: rgb(255,255,255);
+    border-color: rgb(255, 255, 255);
     color: white;
-} 
+}
 
 .navbar-nav>li>a {
     color: #fff !important;
@@ -177,14 +182,18 @@ section .home-reveal.active:before {
     perspective: 2px;
 }
 
-#tech-used-div, #tech-learning-div, #skills-tech-used, #skills-tech-learning, #skills h2 {
+#tech-used-div,
+#tech-learning-div,
+#skills-tech-used,
+#skills-tech-learning,
+#skills h2 {
     color: #d9d9d9;
 }
 
 /* portfolio overlay effect*/
 
 #portfolio {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/darkBlue_background.jpg") no-repeat top center scroll; 
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/darkBlue_background.jpg") no-repeat top center scroll;
     opacity: 1.00;
     background-size: cover;
     -webkit-background-size: cover;
@@ -203,11 +212,11 @@ section .home-reveal.active:before {
 }
 
 .masonry-columns .card {
-  width: 350px;
-  margin: 0 2rem 2rem 0;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
+    width: 350px;
+    margin: 0 2rem 2rem 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 .modal-backdrop.show {
@@ -223,7 +232,8 @@ section .home-reveal.active:before {
 .modal-header {
     border: none;
 }
-.modal-footer{
+
+.modal-footer {
     display: none;
 }
 
@@ -250,10 +260,10 @@ section .home-reveal.active:before {
 }
 
 .modal-center-text {
-  position: absolute;
-  bottom: 3vh;
-  left: 75%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 3vh;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-content {
@@ -269,16 +279,16 @@ section .home-reveal.active:before {
 .modal-header .close {
     font-size: 4rem;
     color: #5f5b53;
-    opacity: 1; 
+    opacity: 1;
     padding-top: 0px;
-    padding-bottom: 15px;   
+    padding-bottom: 15px;
 }
 
 #modal6-center-text {
     position: absolute;
     bottom: 5vh;
     left: 30%;
-    transform: translate(-50%, -50%);    
+    transform: translate(-50%, -50%);
 }
 
 .card {
@@ -310,7 +320,7 @@ section .home-reveal.active:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: silver;
+    background: linear-gradient(to right, #B4B5B8, #D7D7D8, #C0C0C3, #A8A9AD);
     z-index: 1;
     transform-origin: right;
     /* animation: reveal 1s reverse forwards; */
@@ -354,7 +364,7 @@ section .home-reveal.active:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: silver;
+    background: linear-gradient(to right, #B4B5B8, #D7D7D8, #C0C0C3, #A8A9AD);
     z-index: 1;
     transform-origin: right;
     /* animation: reveal 1s reverse forwards;
@@ -392,6 +402,7 @@ section .home-reveal.active:before {
 .img-flex {
     max-width: 100%;
 }
+
 .zoom {
     transition: transform .4s;
 }
@@ -419,8 +430,10 @@ section .home-reveal.active:before {
     perspective: 2px;
     overflow-x: hidden;
     overflow-y: auto;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width:none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 #experience::-webkit-scrollbar {
@@ -582,7 +595,7 @@ label {
 
 #about {
     background-color: #404040;
-    overflow:auto;
+    overflow: auto;
     height: 100vh;
 }
 
@@ -615,6 +628,7 @@ p.ds-font {
     0% {
         transform: scaleX(0);
     }
+
     100% {
         transform: scaleX(1);
     }
@@ -623,15 +637,17 @@ p.ds-font {
 
 
 @media screen and (max-width: 1200px) {
-  #about-text {
-    margin: 10%;
-  }
-  #about-image {
-    margin-top: 2%;
-  }
-  #home {
-    background-position: 5% 80%;
-  }
+    #about-text {
+        margin: 10%;
+    }
+
+    #about-image {
+        margin-top: 2%;
+    }
+
+    #home {
+        background-position: 5% 80%;
+    }
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -642,12 +658,14 @@ p.ds-font {
     .timeline::after {
         left: 31px;
     }
+
     /* Full-width containers */
     .exp-container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
+
     /* Make sure that all arrows are pointing leftwards */
     .exp-container::before {
         left: 60px;
@@ -655,10 +673,13 @@ p.ds-font {
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
+
     /* Make sure all circles are at the same spot */
-    .exp-left::after, .exp-right::after {
+    .exp-left::after,
+    .exp-right::after {
         left: 15px;
     }
+
     /* Make all right containers behave like the left ones */
     .exp-right {
         left: 0%;
