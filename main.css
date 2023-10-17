@@ -10,7 +10,7 @@ html,
 }
 
 .panel {
-    height: 110vh;
+    height: 100vh;
     position: sticky;
     top: 0;
 }
@@ -29,16 +29,22 @@ html,
 #home {
     background-image: linear-gradient(rgba(255, 255, 255, 0.0005), rgba(255, 255, 255, 0.0010), rgba(0, 0, 0, 1.0)), url("images/tech_background_ball_jk_pic_2560x1512.png");
     height: 100vh;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-position: 50% 30%;
     position: relative;
     /* create a parallax effect */
     background-attachment: fixed;
+}
+
+.home-image {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 30%;
+    left: 40%;
 }
 
 .home-text {
@@ -436,10 +442,6 @@ section .home-reveal.active:before {
     /* Firefox */
 }
 
-#experience::-webkit-scrollbar {
-    /* Chrome hides scrollbar but keeps its functionality */
-    display: none;
-}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -551,6 +553,7 @@ section .home-reveal.active:before {
     position: relative;
     border-radius: 6px;
     box-shadow: 10px 10px 15px black;
+    min-width: 70vw;
 }
 
 .exp-content2 {
@@ -559,6 +562,7 @@ section .home-reveal.active:before {
     position: relative;
     border-radius: 6px;
     box-shadow: 10px 10px 15px black;
+    min-width: 70vw;
 }
 
 .exp-content3 {
@@ -567,6 +571,7 @@ section .home-reveal.active:before {
     position: relative;
     border-radius: 6px;
     box-shadow: 10px 10px 15px black;
+    min-width: 70vw;
 }
 
 .exp-content4 {
@@ -575,6 +580,7 @@ section .home-reveal.active:before {
     position: relative;
     border-radius: 6px;
     box-shadow: 10px 10px 15px black;
+    min-width: 70vw;
 }
 
 .exp-zoom {
@@ -644,10 +650,6 @@ p.ds-font {
     #about-image {
         margin-top: 2%;
     }
-
-    #home {
-        background-position: 5% 80%;
-    }
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -661,7 +663,7 @@ p.ds-font {
 
     /* Full-width containers */
     .exp-container {
-        width: 100%;
+        max-width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
