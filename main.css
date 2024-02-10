@@ -448,7 +448,6 @@ section .home-reveal.active:before {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    height: 100vh;
     z-index: 1;
 }
 
@@ -553,7 +552,7 @@ section .home-reveal.active:before {
     position: relative;
     border-radius: 6px;
     box-shadow: 10px 10px 15px black;
-    min-width: 70vw;
+    /* min-width: 70vw; */
 }
 
 .exp-content2 {
@@ -562,7 +561,7 @@ section .home-reveal.active:before {
     position: relative;
     border-radius: 6px;
     box-shadow: 10px 10px 15px black;
-    min-width: 70vw;
+    /* min-width: 70vw; */
 }
 
 .exp-content3 {
@@ -571,7 +570,7 @@ section .home-reveal.active:before {
     position: relative;
     border-radius: 6px;
     box-shadow: 10px 10px 15px black;
-    min-width: 70vw;
+    /* min-width: 70vw; */
 }
 
 .exp-content4 {
@@ -580,7 +579,7 @@ section .home-reveal.active:before {
     position: relative;
     border-radius: 6px;
     box-shadow: 10px 10px 15px black;
-    min-width: 70vw;
+    /* min-width: 70vw; */
 }
 
 .exp-zoom {
@@ -776,6 +775,7 @@ p.ds-font {
         max-width: 100%;
         padding-left: 70px;
         padding-right: 25px;
+        height: auto;
     }
 
     /* Make sure that all arrows are pointing leftwards */
@@ -785,7 +785,13 @@ p.ds-font {
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
-
+    #exp-1, #exp-2, #exp-3, #exp-4 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .exp-left::before {
+        display: none;
+    }
     /* Make sure all circles are at the same spot */
     .exp-left::after,
     .exp-right::after {
@@ -816,6 +822,5 @@ p.ds-font {
         margin-top: 5px;
         display: inline-block;
     }
-
 
 }
