@@ -272,6 +272,16 @@ section .home-reveal.active:before {
     transform: translate(-50%, -50%);
 }
 
+#modal1 .modal-center-text {
+    position: absolute;
+    bottom: 3vh;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+
 .modal-content {
     width: 105%;
     height: 80vh;
