@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Welcome to Jeff Karr Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <style></style>
+</head>
+
+<body onresize="manageResize()">
+  <div id="viewport" class="container-fluid">
+    <div id="scroll-container">
+      <!-- Portfolio section  -->
+      <div style="font-size:24px;" class="col-12">
+        <section id="portfolio" class="panel">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#portNav"
+              aria-controls="portNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="portNav">
+              <div class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              </div>
+            </div>
+          </nav>
+          <div class="text-center my-4">
+            <h2 class="text-center text-white">My Portfolio</h2>
+          </div>
+          <!-- <div class="container-fluid"> -->
+          <div class="container">
+            <div class="masonry-columns">
+              <a data-target="#modal1" data-toggle="modal">
+                <div class="card mt-2 mb-4">
+                  <div class="content-250">
+                    <img class="card-img zoom" src="images/weather-today-1149.png" alt="image1">
+                  </div>
+                </div>
+              </a>
+              <a data-target="#modal2" data-toggle="modal">
+                <div class="card mb-4">
+                  <div class="content-350">
+                    <img class="card-img zoom" src="images/coming_soon_640.jpg" alt="image2">
+                  </div>
+                </div>
+              </a>
+              <a data-target="#modal3" data-toggle="modal">
+                <div class="card mb-4">
+                  <div class="content-350">
+                    <img class="card-img zoom" src="images/ecom-coffee-small-300.jpg" alt="ecom-coffee-img">
+                  </div>
+                </div>
+              </a>
+              <a data-target="#modal4" data-toggle="modal">
+                <div class="card">
+                  <div class="content-250">
+                    <img class="card-img zoom" src="images/newsReader_screenshot.png" alt="image4">
+                  </div>
+                </div>
+              </a>
+              <a data-target="#modal5" data-toggle="modal">
+                <div class="card mb-4">
+                  <div class="content-250">
+                    <img class="card-img zoom" src="images/bamazon-cli-img-small-300.jpg" alt="bamazon-img">
+                  </div>
+                </div>
+              </a>
+              <a data-target="#modal6" data-toggle="modal">
+                <div class="card mb-4">
+                  <div class="content-350">
+                    <img class="card-img zoom" src="images/pet-purfect-img-med-400.jpg" alt="pet-purfect-img">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- </div> -->
+        </section>
+      </div>
+      <!-- Portfolio Modals -->
+      <div id="modal1" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content" style="color:#23312f;line-height:1.5;">
+            <div class="modal-header align-items-bottom pb-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container fluid px-5">
+                <div class="row">
+                  <div class="col-12 col-xl-6 img-center" style="height:420px;">
+                    <a href="https://vermillion-kringle-750e5d.netlify.app/" target="_blank">
+                      <img class="img-flex" src="images/weather-today-575.png" alt="ecom-coffee-img" height="375">
+                      <div class="modal-center-text">Click to open app</div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-xl-6 img-center mt-2">
+                    <h3 class="font-italic">GitHub Repository</h3>
+                    <a href="https://github.com/jeffkarr/weather-app" target="_blank">
+                      <h5 class="mt-1">jeffkarr/weather-app</h5>
+                    </a>
+                    <h3 class="mt-3 font-italic">Technologies used:</h3>
+                    <ul class="font-weight-bold">
+                      <li class="text-left">
+                        <h5>Vue.js <small> (version 3.5)</small></h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Vue Router</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Pinia</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>PrimeVue</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>PrimeIcons</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Vite.js</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Day.js</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>simplemaps.com us-cities data</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>vectorportal.com weatherset Icons</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>OpenWeather (Weather APIs)</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Maptiler (Maps & Weather Modules)</h5>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <h3 class="display-4 text-dark font-italic">Weather Today</h3>
+                  <h5 class="mt-3">This responsive front end web application offers concise weather information at a
+                    glance for a selected city. Users also have the ability to save a city for more frequent use.
+                    This website integrates data from several APIs and uses the Vue.js (version 3 Composition API)
+                    framework.
+                    The app uses Pinia for state management in order to share weather data with the screen elements
+                    and the map. Vue-Router was used to open a separate map page when the app is viewed from a small
+                    mobile device.
+                    Extra care was taken to make the application mobile-responsive across many viewport sizes.
+                    Day.js was used to parse and manipulate dates. I learned a lot working with Vue.js Composition API,
+                    Pinia, Day.js and Vue-Router building this interesting and useful app!
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal2" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content" style="color:#23312f;line-height:1.5;">
+            <div class="modal-header align-items-bottom pb-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container fluid">
+                <div class="row mt-2">
+                  <div class="col-12 col-xl-6">
+                    <img class="img-flex" src="images/coming_soon_640.jpg" alt="proj1-img" height="375">
+                    <div class="modal-center-text text-white">Click image to open app</div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 pl-5 mt-2">
+                    <h4>GitHub Repository</h4>
+                    <p>jeffkarr/to be determined</p>
+                    <h4 class="mt-5">Technologies used:</h4>
+                    <ul>
+                      <li>HTML5</li>
+                      <li>Javascript</li>
+                    </ul>
+                  </div>
+                </div>
+                <h5 class="mt-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper aliquam magna
+                  ut sagittis. Fusce aliquet magna
+                  sit amet lorem vestibulum fermentum at quis mi. Nulla nec pretium lacus, in finibus
+                  felis. Sed ultrices sem metus, non
+                  tempus urna faucibus vitae. Cras semper sollicitudin nulla tempus tempus. Etiam
+                  consectetur viverra odio sed fermentum.
+                  Nullam commodo orci dapibus nunc tincidunt rutrum. Praesent id magna vel quam
+                  maximus congue id a dui. Nunc ut laoreet
+                  sem, eu sodales nulla. Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                  Vestibulum eu neque a sapien aliquet porttitor. Cras ac arcu pharetra, scelerisque
+                  nibh at, iaculis mi. Phasellus varius
+                  aliquet porta. Quisque sed mauris ut arcu aliquet pretium ac in leo.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal3" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content" style="color:#23312f;line-height:1.5;">
+            <div class="modal-header align-items-bottom pb-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container fluid px-5">
+                <div class="row">
+                  <div class="col-12 col-xl-6 img-center" style="height:420px;border:5px solid red">
+                    <a href="http://146.190.185.60" target="_blank">
+                      <img class="img-flex" src="images/ecom-coffee-small-300.jpg" alt="ecom-coffee-img" height="375">
+                      <div class="modal-center-text text-white">Click to open app</div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-xl-6 img-center mt-2">
+                    <h3 class="font-italic">GitHub Repository</h3>
+                    <a href="https://github.com/jeffkarr/ecom-coffee-v2" target="_blank">
+                      <h5 class="mt-1">jeffkarr/ecom-coffee-v2</h5>
+                    </a>
+                    <h3 class="mt-3 font-italic">Technologies used:</h3>
+                    <ul class="font-weight-bold">
+                      <li class="text-left">
+                        <h5>React.js <small> (version 18)</small></h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>React Hooks</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Redux-toolkit.js</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>ReactStrap.js</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Vite.js</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Node.js <small> (version 20)</small></h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Express.js</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>PostgreSQL</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Docker</h5>
+                      </li>
+                      <li class="text-left">
+                        <h5>Ubuntu <small> (version 20)</small></h5>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <h3 class="display-4 text-dark font-italic">eCommerce Coffee</h3>
+                  <h5 class="mt-3">This responsive full stack web application simulates a "coffee and tea" website.
+                    The website was built using the popular React.js framework. The app also uses the Redux-toolkit
+                    library to store
+                    shopping cart data that is sent from all of the product pages. The backend of the application uses
+                    an Express.js server and a PostgreSQL database. The app can also run on Docker containers.
+                    The app is currently hosted on a Ubuntu Linux virtual server.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal4" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content" style="color:#23312f;line-height:1.5;">
+            <div class="modal-header align-items-bottom pb-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container fluid">
+                <div class="row mt-2">
+                  <div class="col-12 col-xl-6" style="position:relative;">
+                    <a href="https://xenodochial-spence-23a2b2.netlify.app/" target="_blank">
+                      <img class="img-flex" src="images/news_reader_screenshot_D210724.PNG" alt="news-reader-img"
+                        height="375">
+                      <div class="text-white" style="position:absolute;bottom:10px;left:25px;">
+                        Click image to open app</div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-xl-6 pl-5 mt-2">
+                    <h4>GitHub Repository</h4>
+                    <a href="https://github.com/jeffkarr/news-reader" target="_blank">
+                      <p>https://github.com/jeffkarr/news-reader</p>
+                    </a>
+                    <h4 class="mt-5">Technologies used:</h4>
+                    <ul>
+                      <li>Vue.js</li>
+                      <li>Express.js</li>
+                      <li>Javascript</li>
+                      <li>Netlify Cloud Functions</li>
+                    </ul>
+
+                  </div>
+                </div>
+                <h5 class="mt-5">This single page application presents news articles from various
+                  sources. It also offers different news categories.<br>
+                  My focus here was to work on smooth presentation and use a color pallette. I learned
+                  a lot about using Netlify as a website host.
+                  The cloud Function used in this app runs an express server.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal5" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content" style="color:#23312f;line-height:1.5;">
+            <div class="modal-header align-items-bottom pb-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container fluid px-5">
+                <div class="row mt-2">
+                  <div class="col-12 col-xl-6 img-center" style="height:420px;border:5px solid red">
+                    <a href="images/bamazon-cli-demo-small.mp4" target="_blank">
+                      <img class="img-flex" src="images/bamazon-cli-img-small-300.jpg" alt="bamazon-img" height="375">
+                      <div class="modal-center-text text-white">Click to start</div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-xl-6 img-center mt-2">
+                    <h3 class="font-italic">GitHub Repository</h3>
+                    <h5 class="mt-1">jeffkarr/Bamazon-CLI</h5>
+                    <h3 class="mt-3 font-italic">Technologies used:</h3>
+                    <ul>
+                      <li>
+                        <h5>Node.js</h5>
+                      </li>
+                      <li>
+                        <h5>Inquirer.js</h5>
+                      </li>
+                      <li>
+                        <h5>MySQL</h5>
+                      </li>
+                      <li>
+                        <h5>Easy-table.js</h5>
+                      </li>
+                      <li>
+                        <h5>Javascript</h5>
+                      </li>
+                      <li>
+                        <h5>Command Line design</h5>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="display-4 text-dark font-italic">Bamazon CLI</h3>
+                  <h5 class="mt-3">This server-side command line interface uses Node.js to execute
+                    Javascript
+                    code
+                    on the server. The app
+                    uses Inquirer.js
+                    to interact with a user thru their computer's "command line" interface. The data
+                    is
+                    stored
+                    in a mySQL database. SQL
+                    is
+                    used to query two database tables. Easy-table.js is used to present the queried
+                    data.
+                  </h5>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal6" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content" style="color:#23312f;line-height:1.5;">
+            <div class="modal-header align-items-bottom pb-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container fluid px-5">
+                <div class="row mt-2">
+                  <div class="col-12 col-xl-6 img-center" style="height:420px;border:5px solid red">
+                    <a href="images/Pet Purfect Demo.mp4" target="_blank">
+                      <img class="img-flex" src="images/pet-purfect-img-med-400.jpg" alt="pet-purfect-img" height="375">
+                      <div id="modal6-center-text" class="text-white">Click to start a demo</div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-xl-6 img-center mt-2">
+                    <h3 class="font-italic">GitHub Repository</h3>
+                    <h5 class="mt-1">jeffkarr/pet-care-project</h5>
+                    <h3 class="mt-3 font-italic">Technologies used:</h3>
+                    <ul>
+                      <li>
+                        <h5>React.js</h5>
+                      </li>
+                      <li>
+                        <h5>Node.js</h5>
+                      </li>
+                      <li>
+                        <h5>Express.js</h5>
+                      </li>
+                      <li>
+                        <h5>MySQL</h5>
+                      </li>
+                      <li>
+                        <h5>Sequelize.js</h5>
+                      </li>
+                      <li>
+                        <h5>Passport.js</h5>
+                      </li>
+                      <li>
+                        <h5>Firebase</h5>
+                      </li>
+                      <li>
+                        <h5>Bootstrap 4</h5>
+                      </li>
+                      <li>
+                        <h5>Javascript</h5>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+                <div>
+                  <h3 class="display-4 text-dark font-italic">Pet Purfect</h3>
+                  <h5>This full stack web application was designed and built by a team of 4 web
+                    developers. The app uses a React.js front-end
+                    and a mySQL database on the back-end. Sequelize.js is used as the object
+                    relational
+                    mapper
+                    to the database. Firebase
+                    Storage is used to hold uploaded images. The server uses Node.js and Express.js
+                    libraries.
+                    This app uses a
+                    model-view-controller (MVC) folder structure. And, Passport.js is used for the
+                    user
+                    authentication.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
